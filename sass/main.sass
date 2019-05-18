@@ -1,0 +1,210 @@
+.d-flex-center
+  display: flex
+  justify-content: center
+.mt-none
+  margin-top: 0!important
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+.wrapper
+  margin: 0 auto
+  font-family: Arial
+$grey: rgb(152,152,152)
+$blue: rgb(4,30,165)
+.header
+  margin: 0 auto
+  text-align: center
+.header-title,.header-subtitle
+  font-family: Arial
+  color: $grey
+  font-weight: bold
+.header-title
+  font-size: 27px
+.header-subtitle
+  font-size: 16px
+.course
+  margin-top: 20px
+.course-title
+  font-weight: bold
+  color: $blue
+  font-size: 24px
+  padding: 0 10px
+.course-name
+  font-size: 20px
+  color: $grey
+main
+  margin: 0 auto
+  text-align: center
+  display: flex
+  align-items: center
+  flex-direction: column
+.course-video
+  position: relative
+  margin: 0 auto
+  text-align: center
+  width: 460px
+  margin-top: 10px
+  @media (max-width: 700px)
+    width: 400px
+  @media (max-width: 430px)
+    width: 300px
+  img
+    width: 100%
+.play-triangle
+  position: absolute
+  top: calc(50% - 30px)
+  left: calc(50% - 25px)
+  width: 0px
+  height: 0px
+  border-top: 30px solid transparent
+  border-bottom: 30px solid transparent
+  border-left: 50px solid $blue
+  cursor: pointer
+  transition: 0.3s ease
+  &:hover
+    transform: scale(1.2)
+.order-form
+  margin: 0 auto
+  margin-top: -5px
+  padding: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 460px
+  background-color: $grey
+  @media (max-width: 700px)
+    width: 400px
+  @media (max-width: 430px)
+    width: 300px
+  input
+    margin: 5px
+    padding: 5px 10px
+    height: 40px
+    width: 100%
+    color: $grey
+    font-size: 18px
+    font-family: Helvetica
+    &::placeholder
+      color: $grey
+      font-size: 18px
+      font-family: Helvetica
+      font-weight: 400
+.personal-data
+  display: flex
+  align-self: flex-start
+  align-items: center
+  margin-top: 5px
+  text-align: left
+  label
+    font-size: 16px
+    font-family: Helvetica
+    color: #fff
+
+.pdcheck
+  width: 20px!important
+  height: 20px!important
+  margin: 0!important
+  margin-right: 10px!important
+.course-card-info
+  margin: 0 auto
+  background: $blue
+  padding: 15px
+  text-align: center
+  color: #ffffff
+  font-family: Helvetica
+  @media (max-width: 430px)
+    width: 300px
+  .first-line
+    font-size: 28px
+  .second-line
+    font-size: 20px
+  .third-line
+    font-size: 16px
+.blue-text
+  color: $blue
+  font-size: 20px
+  margin-top: 20px
+  font-weight: bold
+.grey-text
+  margin-top: 10px
+  color: $grey
+  font-size: 20px
+  text-align: left
+  line-height: 27px
+  text-align: justify
+.blue-text, .grey-text
+  width: 670px
+  font-family: Arial
+  @media (max-width: 700px)
+    width: 550px
+  @media (max-width: 600px)
+    width: 450px
+  @media (max-width: 500px)
+    width: 400px
+  @media (max-width: 430px)
+    width: 300px
+.license
+  text-align: center
+.license-images
+  margin-top: 30px
+.license-caption
+  font-size: 12px
+  color: $grey
+  font-weight: bold
+.images
+  margin: 25px 0
+  width: 670px
+  display: flex
+  justify-content: space-between
+  @media (max-width: 700px)
+    width: 550px
+    display: block
+  @media (max-width: 600px)
+    width: 450px
+  @media (max-width: 500px)
+    width: 400px
+  @media (max-width: 430px)
+    width: 350px
+.socials
+  display: flex
+  justify-content: space-between
+  width: 460px
+  margin: 20px 0
+  i
+    font-size: 30px
+    color: #fff
+    width: 50px
+    line-height: 50px
+    height: 50px
+    background: $grey
+    cursor: pointer
+    transition: 0.3s ease
+    &:hover
+      background: darken($grey, 10%)
+.footer
+  padding: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  width: 100%
+  background: $grey
+.nav-list
+  display: flex
+  flex-direction: column
+  margin-bottom: 10px
+  a
+    font-family: Helvetica
+    color: #ffffff
+    text-decoration: none
+    text-transform: uppercase
+    margin: 7px
+    &:hover
+      color: darken(#fff, 10%)
+.copyright
+  font-size: 12px
+  font-family: Helvetica
+  color: #ffffff
+  
+  
